@@ -1,16 +1,29 @@
-# React + Vite
+# 🚀 AI Resume Builder - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, full-stack capable React application that empowers users to create professional, ATS-friendly resumes in minutes using **Generative AI**.
 
-Currently, two official plugins are available:
+## 🌟 Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   **🤖 AI-Powered Content:** Instantly generate professional summaries, experience bullet points, and skills using Groq AI (via custom backend).
+-   **⚡ Real-Time Preview:** Live updates allow users to see changes immediately as they type.
 
-## React Compiler
+-   **🔐 Secure Authentication:** Integrated with **Clerk** for seamless Google/Email sign-in and session management.
+-   **📄 PDF Export:** One-click download to save the resume as a high-quality PDF.
+-   **📱 Responsive Design:** Fully optimized for desktop and tablet editing.
+-   **🔄 Rich Text Editing:** Intuitive forms for Personal Details, Experience, Education, and Skills.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+-   **Framework:** [React.js](https://react.dev/) + [Vite](https://vitejs.dev/) (Fast Build Tool)
+-   **Styling:** [Tailwind CSS](https://tailwindcss.com/) + [Shadcn UI](https://ui.shadcn.com/)
+-   **State Management:** React Context API
+-   **Routing:** React Router DOM v6
+-   **Authentication:** [Clerk](https://clerk.com/)
+-   **HTTP Client:** Axios
+-   **Icons:** Lucide React
+
+---
+
+## 📂 Project Structure
