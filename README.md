@@ -27,3 +27,59 @@ A modern, full-stack capable React application that empowers users to create pro
 ---
 
 ## 📂 Project Structure
+
+frontend/
+├── public/
+│   └── favicon.ico
+│
+├── src/
+│   ├── components/          → Reusable UI pieces
+│   │   ├── common/          → Shared components (Button, Input, etc.)
+│   │   ├── layout/          → Layout components (Navbar, Sidebar, etc.)
+│   │   └── resume/          → Resume-specific components
+│   │
+│   ├── pages/               → Full pages (one per route)
+│   │   ├── auth/            → Login, Register pages
+│   │   ├── dashboard/       → Dashboard page
+│   │   ├── resume/          → Resume builder page
+│   │   ├── ai/              → AI features pages
+│   │   └── jobs/            → Job tracker page
+│   │
+│   ├── context/             → React Context (global state)
+│   │
+│   ├── services/            → API calls (axios)
+│   │
+│   ├── App.jsx              → Main app component
+│   ├── App.css              → Global styles
+│   └── main.jsx             → Entry point
+│
+├── .env
+├── package.json
+├── index.html
+└── vite.config.js
+
+
+
+
+How Frontend Connects to Backend
+
+React (Frontend)                    Express (Backend)
+     │                                     │
+     │  User clicks "Login"                │
+     │       ↓                             │
+     │  Login Page sends                   │
+     │  axios.post("/api/auth/login")      │
+     │       ↓                             │
+     │  ─── HTTP Request ──────────►       │
+     │  { email, password }                │
+     │                                     │
+     │                              Auth Controller
+     │                              checks password
+     │                              generates JWT
+     │                                     │
+     │  ◄── HTTP Response ─────────        │
+     │  { token, user }                    │
+     │       ↓                             │
+     │  Store token in localStorage        │
+     │  Redirect to Dashboard              │
+     │                                     │
