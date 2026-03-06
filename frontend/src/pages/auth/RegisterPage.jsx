@@ -84,7 +84,7 @@ const RegisterPage = () => {
                 </div>
 
                 <p className="text-gray-700 text-xs">
-                    © 2024 ResumeAI
+                    © 2026 ResumeAI
                 </p>
             </div>
 
